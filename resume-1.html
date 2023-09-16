@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+#grid-container {
+  display: grid;
+  column-gap: 30px;
+}
+.leftDiv {
+  border: 5px outset black;
+  background-color: #0011111;
+  text-align: left;
+}
+.leftMargin{
+  margin-left :30px;
+  margin-right :30px;
+  column-count: 3;
+  column-gap: 10px;
+  border: .2px outset gray;
+  font-weight: bold;
+  padding-left: 10px;  
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+ 
+}
+</style>
+</head>
+<body>
+ <form action="test2.html" method ="GET">
+<div class="leftDiv">
+  <h2>Resume</h2>
+  <p>Please Enter Your Details</p>
+   <b><label for="pd" >Personal Details:</label></b><br><br>
+    <div class="leftMargin">
+	    
+		<label for="fname">First Name</label><br>
+		<input type="text" name="fname" id="fname" value="P"> <br><br>
+		<label for="lname">Last Name</label><br>
+		<input type="text" name="lname" id="lname"  value="M"> <br><br>
+		<label for="dob">Date of Birth</label><br>
+		<input type="date" id="dob" name="dob" ><br><br>
+		<label for="phone">Phone No</label><br>
+		<input type="text" name="phone" id="phone" value="9605001611"> <br><br>
+		<label for="email">Email Address</label><br>
+		<input type="text" name="email" id="email" value="PM@gmail.com"> <br><br>
+		<label for="gender">Select Gender</label><br>
+		<select name="gender" id="gender">
+			<option value="F">Female</option>
+			<option value="M">Male</option>
+			<option value="N">PreferNot to Say</option>
+		</select>
+		
+	</div>
+	
+	
+	<br><b><label for="pa">Permenent Address</label></b><br><br>
+    <div class="leftMargin">
+	    
+		<label for="hno">House NO/ House Name</label><br>
+		<input type="text" name="fname" id="fname" value="Krishnapriya"> <br><br>
+		<label for="Street">Street Name</label><br>
+		<input type="text" name="street" id="street"  value="Kavalloor"> <br><br>
+		<label for="city">City</label><br>
+		<input type="text" id="city" name="city"  value ="Vattiyoorkavu"><br><br>
+		<label for="dist">District</label><br>
+		<input type="text" name="dist" id="dist" value="Trivandrum"> <br><br>
+		<label for="State">State</label><br>
+		<input type="text" name="state" id="email" value="Kerala"> <br><br>
+	
+
+		
+	</div>
+	<br><b><label for="pa">Esucational Details</label></b><br><br>
+    <div >
+			<table border = .5>
+			  <tr>
+				<th>Course</th>
+				<th>Instritution</th>
+				<th>Passing Year</th>
+				<th>Grade/Mark</th>
+			  </tr>
+			  <tr>
+				<td><input type="text" name="c1" id="c1" value="BSc"> <br><br></td>
+				<td><input type="text" name="i1" id="i1" value="MG"></td>
+				<td><input type="text" name="y1" id="y1" value="1995"></td>
+				<td><input type="text" name="g1" id="g1" value="First"></td>
+			  </tr>
+			  <tr>
+				<td><input type="text" name="c2" id="c2" value="PreeDegree"> <br><br></td>
+				<td><input type="text" name="i2" id="i2" value="MG"></td>
+				<td><input type="text" name="y2" id="y2" value="1992"></td>
+				<td><input type="text" name="g2" id="g2" value="First"></td>
+			  </tr>
+			  <tr>
+				<td><input type="text" name="c3" id="c3" value="10 th"> <br><br></td>
+				<td><input type="text" name="i3" id="i3" value="State"></td>
+				<td><input type="text" name="y3" id="y3" value="1990"></td>
+				<td><input type="text" name="g3" id="g3" value="Dist"></td>
+			  </tr>
+			</table>
+
+	
+
+		
+	</div>
+<br><br>	<input type="submit" value="Submit" onclick="getData()">
+</div>
+</form>
+
+
+
+</body>
+</html>
